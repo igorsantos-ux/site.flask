@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css"> 
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Crie seu login</h1>
+        <p id="subtitulo">Preencha os dados abaixo:</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <br>
+            <div>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            
+        </fieldset>
+
+        <br>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div id="check">
+                <label><strong>Gênero</strong></label><br>
+                <label>
+                    <input type="radio" name="genero" value="masculino">Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="feminino">Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="não dizer">Prefiro não dizer
+                </label>
+            </div>
+            <br>
+            <div class="campo">
+                <label><strong>Estado Civil</strong></label>
+                <select name="estado" id="estado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Solteiro(a)</option>
+                    <option >Casado(a)</option>
+                    <option >Viúvo(a)</option>
+                    <option >Divorcíado(a)</option>
+                    <option>Outro</option>
+                </select>   
+            </div>
+            <br>
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Nacionalidade</strong></label><br><br>
+                <input type="checkbox" id="nacionalidade1" name="nacionalidade1" value="brasileira">
+                <label for="nacionalidade1">Brasileira</label>
+                <input type="checkbox" id="nacionalidade2" name="nacionalidade2" value="estrangeira">
+                <label for="nacinalidade2">Estrangeira</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label ><strong>Comentarios</strong></label><br>
+            <textarea name="comentario" id="comentario" style="width: 26em" rows="5"></textarea>
+        </div>
+        
+        <br>
+
+        <button type="submit" class="botao">Enviar</button>
+
+    </form>
+
+</body>
+</html>
